@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         maxMumber(numberOne: 2, numberTow: 2)
         squareAndCubeOfNumber(number: 2)
         numberOrder(givenNumber: 5)
-        
+        countDivisor(number: 8128)
     }
 
     func maxMumber (numberOne: Int, numberTow: Int) {
@@ -48,6 +48,26 @@ class ViewController: UIViewController {
             print(-i)
         }
         print("Function numberOrder is Work <-")
+    }
+    
+    func countDivisor (number: Int) {
+        var countDivisor = 0
+        var divisior = 0
+        for i in 1 ..< number {
+            if number%i == 0 {
+                countDivisor += 1
+                divisior = i
+                divisior += i
+            }
+        }
+        print("Count of divisor \(number) is  \(countDivisor)")
+        
+        if divisior == number{
+            print("Number \(number) is perfect")
+        }
+        else {
+            print("Number \(number) is NOT perfect")
+        }
     }
 }
 
