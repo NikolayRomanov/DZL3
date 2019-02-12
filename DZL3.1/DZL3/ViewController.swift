@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //sd
+        //sdghfchgfcgfchvhg
         maxMumber(numberOne: 2, numberTow: 2)
         squareAndCubeOfNumber(number: 2)
         numberOrder(givenNumber: 5)
